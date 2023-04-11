@@ -1,0 +1,36 @@
+.main
+{
+    background: #e5e5e57b;
+    width: 1170px;
+    height: 840px;
+    &__list
+    {
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-h2
+        {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: #000000;
+
+        }
+
+        &-btn
+        {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding: 12px 26px;
+            outline: none;
+            background: #FEAF00;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
