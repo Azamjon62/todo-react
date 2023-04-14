@@ -9,6 +9,8 @@ import icon5 from "../../assets/imgs/icon5.svg";
 import icon6 from "../../assets/imgs/icon6.svg";
 import icon7 from "../../assets/imgs/icon7.svg";
 
+import { NavLink } from "react-router-dom";
+
 
 const Aside = () => {
   return (
@@ -28,12 +30,12 @@ const Aside = () => {
 
           <div className="aside__flex__medium">
             <ul className='aside__flex__medium__ul' >
-                <li className='li' > <img src={icon1} alt="home" /> <a href="#">Home</a></li>
-                <li className='li' > <img src={icon2} alt="course" /> <a href="#">Course</a></li>
-                <li className='li' > <img src={icon3} alt="students" /> <a href="#">Students</a></li>
-                <li className='li' > <img src={icon4} alt="payment" /> <a href="#">Payment</a></li>
-                <li className='li' > <img src={icon5} alt="report" /> <a href="#">Report</a></li>
-                <li className='li' > <img src={icon6} alt="Settings" /> <a href="#">Settings</a></li>
+                <NavLink to="/" className='li' > <img src={icon1} alt="home" /> <a href='#'>Home</a></NavLink>
+                <NavLink to="/course" className='li' > <img src={icon2} alt="course" /> <a href='#'>Course</a></NavLink>
+                <NavLink to="/students" className='li' > <img src={icon3} alt="students" /> <a href='#' >Students</a></NavLink>
+                <NavLink to="/payment" className='li' > <img src={icon4} alt="payment" /> <a href='#' >Payment</a></NavLink>
+                <NavLink to="/report" className='li' > <img src={icon5} alt="report" /> <a href='#'>Report</a></NavLink>
+                <NavLink to="/settings" className='li' > <img src={icon6} alt="Settings" /> <a href='#'>Settings</a></NavLink>
             </ul>
           </div>
             <div className='aside__flex__login' >

@@ -1,6 +1,5 @@
 .aside
 {
-
     width: 270px;
     height: 900px;
     background: #F2EAE1;
@@ -83,6 +82,10 @@
                 align-items: center;
                 gap: 21px;
 
+                .active
+                {
+                    background: #FEAF00;
+                }
 
                 .li
                 {
@@ -102,7 +105,6 @@
 
                     a
                     {
-                        text-decoration: none;
                         font-weight: 500;
                         font-size: 14px;
                         line-height: 17px;

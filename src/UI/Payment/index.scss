@@ -1,0 +1,22 @@
+.mains
+{
+    background: #e5e5e57b;
+    width: 1170px;
+    height: 840px;
+
+    &__list
+    {
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-h2
+        {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: #000000;
+        }
+    }
+}
