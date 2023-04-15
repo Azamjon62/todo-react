@@ -5,6 +5,7 @@ import icon11 from "../../assets/imgs/icon11.svg";
 import icon12 from "../../assets/imgs/icon12.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const Card = () => {
   const [openModal, setModal] = useState(false);
 
