@@ -30,12 +30,12 @@ const Aside = () => {
 
           <div className="aside__flex__medium">
             <ul className='aside__flex__medium__ul' >
-                <NavLink to="/" className='li' > <img src={icon1} alt="home" /> <a href='#'>Home</a></NavLink>
-                <NavLink to="/course" className='li' > <img src={icon2} alt="course" /> <a href='#'>Course</a></NavLink>
-                <NavLink to="/students" className='li' > <img src={icon3} alt="students" /> <a href='#' >Students</a></NavLink>
-                <NavLink to="/payment" className='li' > <img src={icon4} alt="payment" /> <a href='#' >Payment</a></NavLink>
-                <NavLink to="/report" className='li' > <img src={icon5} alt="report" /> <a href='#'>Report</a></NavLink>
-                <NavLink to="/settings" className='li' > <img src={icon6} alt="Settings" /> <a href='#'>Settings</a></NavLink>
+                <NavLink to="/" className='li' > <img src={icon1} alt="home" /> Home</NavLink>
+                <NavLink to="/course" className='li' > <img src={icon2} alt="course" /> Course</NavLink>
+                <NavLink to="/students" className='li' > <img src={icon3} alt="students" /> Students</NavLink>
+                <NavLink to="/payment" className='li' > <img src={icon4} alt="payment" /> Payment</NavLink>
+                <NavLink to="/report" className='li' > <img src={icon5} alt="report" /> Report</NavLink>
+                <NavLink to="/settings" className='li' > <img src={icon6} alt="Settings" /> Settings</NavLink>
             </ul>
           </div>
             <div className='aside__flex__login' >

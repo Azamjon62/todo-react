@@ -3,7 +3,7 @@ import Aside from "./components/Aside/Aside";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Card from "./UI/Card/Card.jsx";
-import Payment from "./UI/Payment/Payment";
+import Payment from "./pages/Payment/Payment";
 import { Route, Routes } from "react-router-dom";
 
 function App() {

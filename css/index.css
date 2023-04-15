@@ -1,59 +1,193 @@
-.main {
+.mains {
   background: rgba(229, 229, 229, 0.4823529412);
   width: 1170px;
   height: 840px;
+  overflow-y: scroll;
 }
-.main__flex {
-  padding-top: 30px;
+.mains__list {
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mains__list-h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+.mains__list-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 12px 26px;
+  outline: none;
+  background: #FEAF00;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.mains__list-btn:hover {
+  background: rgba(254, 174, 0, 0.6862745098);
+  color: #000;
+}
+.mains .wrapper {
+  margin: 21px 0 22px 145px;
+  display: flex;
+  gap: 185px;
+}
+.mains .wrapper__flex {
+  display: flex;
+  gap: 135px;
+}
+.mains .wrapper__flex2 {
+  display: flex;
+  gap: 120px;
+}
+.mains .wrapper p {
+  font-weight: 600;
+  font-size: 12px;
+  color: #ACACAC;
+}
+.mains .wrapper .p {
+  font-weight: 600;
+  font-size: 12px;
+  color: #ACACAC;
+  margin-left: -105px;
+}
+.mains .card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 1110px;
+  height: 85px;
+  display: flex;
+  padding: 0 20px 0 14px;
+  gap: 100px;
+}
+.mains .card__flex {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+.mains .card__flex .p1 {
+  width: 50px;
+}
+.mains .card__flexs {
+  display: flex;
+  gap: 50px;
+  margin-left: 25px;
+  align-items: center;
+}
+.mains .card__flexs .p2 {
+  width: 170px;
+}
+.mains .card__flexs .p3 {
+  width: 115px;
+}
+.mains .card__flexs .p4 {
+  width: 70px;
+}
+.mains .card__fleis {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+.mains .card__fleis__icon {
   display: flex;
   gap: 30px;
 }
-.main__flex__card {
-  background: #F0F9FF;
-  border-radius: 8px;
-  width: 255px;
-  height: 157px;
-  padding: 20px;
-}
-.main__flex__card__flex {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  gap: 15px;
-}
-.main__flex__card-h3 {
-  font-weight: 700;
-  font-size: 30px;
-  color: #000000;
-  text-align: end;
-  margin-top: 10px;
-}
-.main__flex__card-h3 span {
-  font-size: 18px;
-}
-.main__flex__card2 {
-  background: #FEF6FB;
-  border-radius: 8px;
-  width: 255px;
-  height: 157px;
-  padding: 20px;
-}
-.main__flex__card3 {
-  background: #FEFBEC;
-  border-radius: 8px;
-  width: 255px;
-  height: 157px;
-  padding: 20px;
-}
-.main__flex__card4 {
-  background: linear-gradient(110.42deg, #FEAF00 18.27%, #F8D442 91.84%);
-  border-radius: 8px;
-  width: 255px;
-  height: 157px;
-  padding: 20px;
+
+.todo {
+  display: none;
+  position: absolute;
+  top: 100px;
+  background: #fff;
+  width: 1000px;
+  height: 500px;
 }
 
-.p {
-  color: #6C6C6C;
+.modal {
+  display: none;
+}
+.modal .moda {
+  background: rgba(0, 0, 0, 0.2039215686);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+  left: 410px;
+  background: #fff;
+  border-radius: 10px;
+  width: 620px;
+  height: 350px;
+}
+.modal__form h2 {
+  margin-top: 25px;
+}
+.modal__form__flex {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 35px;
+}
+.modal__form__flex .label1 {
+  border: 1px solid #000000;
+  border-radius: 6px;
+  cursor: text;
+  padding: 8px;
+}
+.modal__form__flex .label1 input {
+  width: 245px;
+  border: none;
+  outline: none;
+}
+.modal__form__flex .label2 {
+  border: 1px solid #000000;
+  border-radius: 6px;
+  cursor: text;
+  padding: 8px;
+}
+.modal__form__flex .label2 input {
+  width: 245px;
+  border: none;
+  outline: none;
+}
+.modal__form__label3 {
+  border: 1px solid #000000;
+  border-radius: 6px;
+  cursor: text;
+  padding: 8px;
+  margin-top: 30px;
+}
+.modal__form__label3 input {
+  width: 537px;
+  border: none;
+  outline: none;
+}
+.modal__form__btn {
+  margin-top: 30px;
+  width: 555px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  background: rgba(50, 205, 50, 0.514);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal__form__btn:hover {
+  background: rgb(50, 205, 50);
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

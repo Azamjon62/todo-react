@@ -3,6 +3,7 @@
     background: #e5e5e57b;
     width: 1170px;
     height: 840px;
+    overflow-y: scroll;
 
     &__list
     {
@@ -32,6 +33,13 @@
             border-radius: 4px;
             border: none;
             cursor: pointer;
+            transition: 0.2s;
+
+            &:hover
+            {
+                background: #feae00af;
+                color: #000;
+            }
         }
     }
 
@@ -40,19 +48,19 @@
         margin: 21px 0 22px 145px;
         // width: 802px;
         display: flex;
-        gap: 165px;
+        gap: 185px;
 
 
         &__flex
         {
             display: flex;
-            gap: 111px;
+            gap: 135px;
         }
 
         &__flex2
         {
             display: flex;
-            gap: 85px;
+            gap: 120px;
         }
 
         p
@@ -61,8 +69,17 @@
             font-size: 12px;
             color: #ACACAC;
         }
+
+        .p
+        {
+            font-weight: 600;
+            font-size: 12px;
+            color: #ACACAC;
+            margin-left: -105px;
+        }
     }
     
+
 
     .card
     {
@@ -79,13 +96,41 @@
             display: flex;
             gap: 35px;
             align-items: center;
+
+            .p1
+            {
+                width: 50px;
+            }
+        }
+        &__flexs
+        {
+            display: flex;
+            gap: 50px;
+            margin-left: 25px;
+            align-items: center;
+
+            .p2
+            {
+                width: 170px;
+            }
+
+            .p3
+            {
+                width: 115px;
+            }
+
+            .p4
+            {
+                width: 70px;
+            }
         }
 
         &__fleis
         {
             display: flex;
-            gap: 80px;
+            gap: 90px;
             align-items: center;
+            // margin-left: 60px;
 
             &__icon
             {
@@ -101,3 +146,144 @@
 
 
 }
+
+.todo
+{
+    display: none;
+    position: absolute;
+    top: 100px;
+    background: #fff;
+    width: 1000px;
+    height: 500px;
+}   
+
+
+
+.modal
+{
+    display: none;
+
+
+    .moda
+    {
+    background: #00000034;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    }
+
+
+
+
+    &__form
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 150px;
+        left: 410px;
+        background: #fff;
+        border-radius: 10px;
+        width: 620px;
+        height: 350px;
+
+        h2
+        {
+            margin-top: 25px;
+        }
+
+        &__flex
+        {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 35px;
+
+            .label1 
+            {
+                border: 1px solid #000000;
+                border-radius: 6px;
+                cursor:text;
+                padding: 8px;
+
+                input
+                {
+                    width: 245px;
+                    border: none;
+                    outline: none;
+                }
+                
+            }
+
+            .label2
+            {
+                border: 1px solid #000000;
+                border-radius: 6px;
+                cursor:text;
+                padding: 8px;
+
+
+                input
+                {
+                    width: 245px;
+                    border: none;
+                    outline: none;
+                }
+                
+            }
+        }
+
+        &__label3
+        {
+            border: 1px solid #000000;
+            border-radius: 6px;
+            cursor:text;
+            padding: 8px;
+            margin-top: 30px;
+
+
+            input
+            {
+                width: 537px;
+                border: none;
+                outline: none;
+            }
+
+        }
+
+        &__btn
+        {
+            margin-top: 30px;
+            width: 555px;
+            padding: 12px;
+            border-radius: 6px;
+            border: none;
+            font-size: 18px;
+            background: rgba(50, 205, 50, 0.514);
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover
+            {
+                background: rgb(50, 205, 50);
+                color: #fff;
+            }
+        }
+
+    }
+
+
+}
+
+
+// .baz
+// {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 30px;
+// }
