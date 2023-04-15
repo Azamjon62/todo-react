@@ -15,10 +15,7 @@ const Card = () => {
       email: "azamjonx839@gmail.com",
       phone: "+998938516223",
     }
-
-  ],
-      localStorage.getItem("usersTask")
-  );
+  ]);
 
   const [name, setName] = useState(
     {
@@ -121,7 +118,6 @@ const Card = () => {
             onClick={(e) => {
               setModal(false);
               addTask(e);
-              localStorage.setItem("usersTask", name);
             }}
           >
             Submit
